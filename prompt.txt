@@ -1,0 +1,10 @@
+Create a Node.js application that provides a language translation API with Redis caching. The API should:
+- Authenticate requests using an API key (x-api-key header or query parameter).
+- Have a root endpoint (/) that returns a success message.
+- Have a /translate endpoint that accepts POST requests with a targetLanguage query parameter and a JSON array of texts in the request body.
+- Translate the provided texts using an external translation service (e.g., Microsoft Translator API).
+- Cache translation results in Redis to avoid redundant calls to the external API.
+- Handle cases where targetLanguage is missing or the request body is empty.
+- Return appropriate error messages and status codes for authentication failures and invalid requests.
+
+Ensure the project follows standard Node.js conventions and includes necessary dependencies in package.json.
